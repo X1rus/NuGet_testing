@@ -26,17 +26,23 @@ namespace testing
         {
             PropertiesColection.driver = new ChromeDriver(@"C:\Users\User\Downloads\chromedriver_win32");
             //driver.Navigate().GoToUrl("http://www.google.com");
-            PropertiesColection.driver.Navigate().GoToUrl("http://www.executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
+            // PropertiesColection.driver.Navigate().GoToUrl("http://www.executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
+            PropertiesColection.driver.Navigate().GoToUrl("http://www.executeautomation.com/demosite/Login.html");
             Console.WriteLine("opend URL");
         }
         [Test]
         public void ExecuteTest()
         {
 
+            //login to application
+            LoginPageObject pageLogin = new LoginPageObject();
+            EAPageObject pageEA= pageLogin.Login("login","password");
+            pageEA.FillUserForm("kk","Middlename","Firstname");
+
             //initial the page by calling its reference
-            EAPageObject page = new EAPageObject();
-            page.txtInitial.SendKeys("text");
-            page.btnSave.Click();
+
+            //pageEA.txtInitial.SendKeys("text");
+            //pageEA.btnSave.Click();
 
 
             // IWebElement element = driver.FindElement(By.Name("q"));
