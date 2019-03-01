@@ -32,21 +32,28 @@ namespace testing
         [Test]
         public void ExecuteTest()
         {
+
+            //initial the page by calling its reference
+            EAPageObject page = new EAPageObject();
+            page.txtInitial.SendKeys("text");
+            page.btnSave.Click();
+
+
             // IWebElement element = driver.FindElement(By.Name("q"));
             // element.SendKeys("sdklsdlsk");
             //   Console.WriteLine("test runing");
             //Drop down
-            SeleniumSetMethods.SelectDropDown( "TitleId", "Mr.", PropertyType.Id);
+            //SeleniumSetMethods.SelectDropDown( "TitleId", "Mr.", PropertyType.Id);
 
-            //Title
-            SeleniumSetMethods.EnterText("Initial","test",PropertyType.Name);
+            ////Title
+            //SeleniumSetMethods.EnterText("Initial","test",PropertyType.Name);
 
-            //Resived text
-            Console.WriteLine("resived text from title: "+SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
-            Console.WriteLine("resived text from initial: " + SeleniumGetMethods.GetText( "Initial", PropertyType.Name));
+            ////Resived text
+            //Console.WriteLine("resived text from title: "+SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
+            //Console.WriteLine("resived text from initial: " + SeleniumGetMethods.GetText( "Initial", PropertyType.Name));
 
-            //Click
-            SeleniumSetMethods.Click("Save", PropertyType.Name);
+            ////Click
+            //SeleniumSetMethods.Click("Save", PropertyType.Name);
         }
         [Test]
          public void NextTest()
