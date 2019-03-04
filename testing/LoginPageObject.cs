@@ -27,11 +27,11 @@ namespace testing
         public EAPageObject Login(string UserName,string Password)
         {
             //User name
-            txtUserName.SendKeys(UserName);
+            txtUserName.EnterText(UserName);
 
             //password
 
-            txtPassword.SendKeys(Password);
+            txtPassword.EnterText(Password);
 
             //click
             btnLogin.Submit();

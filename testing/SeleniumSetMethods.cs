@@ -8,22 +8,22 @@ using System.Threading.Tasks;
 
 namespace testing
 {
-    class SeleniumSetMethods
+  public static  class SeleniumSetMethods
     {
         //Enter Text
-        public static void EnterText(IWebElement element, string value)
+        public static void EnterText(this IWebElement element, string value)
         {
             element.SendKeys(value);
         }
-        //Click operations
+        //Click operations button, checkbox, option ect.
 
-        public static void Click(IWebElement element)
+        public static void Clicks(this IWebElement element)
         {
             element.Click();
         }
 
         //selecting drop down control
-        public static void SelectDropDown(IWebElement element, string value)
+        public static void SelectDropDown(this IWebElement element, string value)
         {
             new SelectElement(element).SelectByText(value);
 

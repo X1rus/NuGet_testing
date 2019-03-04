@@ -19,3 +19,9 @@ C:\Users\User\source\repos\testing\testing\bin\Debug\nunit.framework.pdb
 C:\Users\User\source\repos\testing\testing\bin\Debug\nunit.framework.xml
 C:\Users\User\source\repos\testing\testing\bin\Debug\WebDriver.Support.dll
 C:\Users\User\source\repos\testing\testing\bin\Debug\WebDriver.Support.xml
+C:\Users\User\source\repos\testing\testing\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\User\source\repos\testing\testing\bin\Debug\ExcelDataReader.dll
+C:\Users\User\source\repos\testing\testing\bin\Debug\ExcelDataReader.pdb
+C:\Users\User\source\repos\testing\testing\bin\Debug\ExcelDataReader.xml
+C:\Users\User\source\repos\testing\testing\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\User\source\repos\testing\testing\bin\Debug\ExcelDataReader.DataSet.xml
